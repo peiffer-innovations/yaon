@@ -2,7 +2,7 @@ name: yaon
 description: A simple library to parse either a string from either yaml or json.
 homepage: https://github.com/peiffer-innovations/yaon
 
-version: 1.0.0
+version: 1.0.0+1
 
 environment:
   sdk: ">=2.16.0 <3.0.0"
