@@ -1,14 +1,13 @@
-name: yaon
-description: A simple library to parse either a string from either yaml or json.
-homepage: https://github.com/peiffer-innovations/yaon
+name: 'yaon'
+description: 'A simple library to parse either a string from either yaml or json.'
+homepage: 'https://github.com/peiffer-innovations/yaon'
+version: '1.0.0+2'
 
-version: 1.0.0+1
-
-environment:
+environment: 
   sdk: '>=2.17.0 <3.0.0'
 
-dependencies:
-  yaml: ^3.1.0
+dependencies: 
+  yaml: '^3.1.1'
 
-dev_dependencies:
-  test: ^1.21.1
+dev_dependencies: 
+  test: '^1.21.1'
