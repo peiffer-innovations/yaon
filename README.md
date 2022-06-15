@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [yaon](#yaon)
+  - [Using the library](#using-the-library)
+  - [Example](#example)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # yaon
 
 A Dart library that can parse a string encoded as either JSON or YAML into a resulting map or array.
