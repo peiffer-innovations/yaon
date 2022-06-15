@@ -1,3 +1,8 @@
+## [1.0.1] - June 15th, 2022
+
+* Fix for parsing strings
+
+
 ## [1.0.0+2] - May, 30, 2022
 
 * Automated dependency updates

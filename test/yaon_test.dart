@@ -65,4 +65,22 @@ multiline: |-
 
     expect(result, expected);
   });
+
+  test('string', () {
+    var input = '''
+abc
+def
+ghi
+jkl
+mno
+pqr
+stu
+vwx
+yz
+''';
+
+    var result = yaon.parse(input);
+
+    expect(result, input);
+  });
 }
