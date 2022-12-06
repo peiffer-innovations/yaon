@@ -12,9 +12,9 @@ dynamic parse(String? input) {
     try {
       result = json.decode(input);
     } catch (_) {
-      var doc = loadYamlDocument(input);
+      final doc = loadYamlDocument(input);
 
-      var value = doc.contents.value;
+      final value = doc.contents.value;
 
       if (value is YamlList) {
         result = List<dynamic>.from(value);

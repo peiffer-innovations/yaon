@@ -37,7 +37,7 @@ Third Line'''
 }
 ''';
 
-    var result = yaon.parse(input);
+    final result = yaon.parse(input);
 
     expect(result, expected);
   });
@@ -61,13 +61,13 @@ multiline: |-
 
 ''';
 
-    var result = yaon.parse(input);
+    final result = yaon.parse(input);
 
     expect(result, expected);
   });
 
   test('string', () {
-    var input = '''
+    final input = '''
 abc
 def
 ghi
@@ -79,7 +79,7 @@ vwx
 yz
 ''';
 
-    var result = yaon.parse(input);
+    final result = yaon.parse(input);
 
     expect(result, input);
   });
