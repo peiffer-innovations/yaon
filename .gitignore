@@ -10,6 +10,8 @@
 .svn/
 pubspec.lock
 
+assets/test.*
+
 # IntelliJ related
 *.iml
 *.ipr

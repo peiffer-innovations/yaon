@@ -10,7 +10,11 @@
 
 # yaon
 
-A Dart library that can parse a string encoded as either JSON or YAML into a resulting map or array.
+A Dart library that can parse a string encoded as either JSON or YAML into a resulting map or array.  As a note, for small data sets JSON and YAML can prossess in similar amounts of time but for large data sets, YAML is significantly more expensive, often at a factor of about 10x.  So for configuration, YAML can be a great choice but for large objects, JSON will be more performant.
+
+The use of [BSON](https://pub.dev/packages/bson) was investigated as another option.  However, multiple tests showed that BSON was slower than JSON, even for Dart native compiled applications, and found a [suggestion](https://stackoverflow.com/questions/36767310/why-is-json-faster-than-bson-in-node-js) that it's even slower on web.
+
+BSON support may be added in the future should the performance metrics change but for now, there's no meaningful advantage that BSON provides over JSON or YAML.
 
 
 ## Using the library
