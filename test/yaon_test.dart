@@ -1,6 +1,6 @@
 import 'package:test/expect.dart';
 import 'package:test/scaffolding.dart';
-import 'package:yaon/yaon.dart' as yaon;
+import 'package:yaon/yaon.dart';
 
 void main() {
   final expected = {

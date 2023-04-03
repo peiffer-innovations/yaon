@@ -1,3 +1,9 @@
+## [1.1.0] - April 3rd, 2023
+
+* Added `tryParse`.
+* Refactored to deprecate the global `parse` and `tryParse` and put them inside a `YaonCodec`.  This makes the usage more similar to the way `json.decode` works.
+
+
 ## [1.0.2+2] - March 28, 2023
 
 * Automated dependency updates

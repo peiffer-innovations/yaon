@@ -30,7 +30,7 @@ dart pub get
 ## Example
 
 ```dart
-import 'package:yaon/yaon.dart' as yaon;
+import 'package:yaon/yaon.dart';
 
 void main() {
   final inputJson = '''
