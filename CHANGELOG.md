@@ -1,3 +1,8 @@
+## [1.1.0+2] - April 4, 2023
+
+* Automated dependency updates
+
+
 ## [1.1.0+1] - April 3rd, 2023
 
 * Added `tryParse`.
@@ -77,6 +82,7 @@
 ## [1.0.0+1] - April 3rd, 2022
 
 * Initial release
+
 
 
 
