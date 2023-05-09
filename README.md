@@ -5,6 +5,7 @@
 - [yaon](#yaon)
   - [Using the library](#using-the-library)
   - [Example](#example)
+  - [Normalization of Results](#normalization-of-results)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
