@@ -75,3 +75,7 @@ multiline: |-
   print(result['map']['two']); // 2
 }
 ```
+
+## Normalization of Results
+
+As a note, there are some technical differences between JSON and YMAL capabilities.  While JSON can only have string based keys, YAML allows for other types.  If you would like to prevent the possibility of primitive keys, when parsing set `normalize: true` and it will guarantee all keys in all returned maps are strings.

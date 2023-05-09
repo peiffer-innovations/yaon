@@ -11,18 +11,22 @@ import 'package:yaon/yaon.dart';
 void main() {
   test('timing', () {
     const files = [
-      'assets/huge.json',
-      'assets/medium.json',
       'assets/small.json',
+      'assets/medium.json',
+      'assets/huge.json',
     ];
+
+    const runs = 1;
 
     for (var file in files) {
       _create(file);
 
       try {
-        final startTime = DateTime.now().millisecondsSinceEpoch;
         final testJson = File(file).readAsStringSync();
-        yaon.parse(testJson);
+        final startTime = DateTime.now().millisecondsSinceEpoch;
+        for (var i = 0; i < runs; i++) {
+          yaon.parse(testJson);
+        }
         final endTime = DateTime.now().millisecondsSinceEpoch;
         print('[file]: ${endTime - startTime} ms');
       } catch (e) {
@@ -30,9 +34,11 @@ void main() {
       }
 
       try {
-        final startTime = DateTime.now().millisecondsSinceEpoch;
         final testJson = File('assets/test.json').readAsStringSync();
-        yaon.parse(testJson);
+        final startTime = DateTime.now().millisecondsSinceEpoch;
+        for (var i = 0; i < runs; i++) {
+          yaon.parse(testJson);
+        }
         final endTime = DateTime.now().millisecondsSinceEpoch;
         print('[json]: ${endTime - startTime} ms');
       } catch (e) {
@@ -40,9 +46,11 @@ void main() {
       }
 
       try {
-        final startTime = DateTime.now().millisecondsSinceEpoch;
         final testYaml = File('assets/test.yaml').readAsStringSync();
-        yaon.parse(testYaml);
+        final startTime = DateTime.now().millisecondsSinceEpoch;
+        for (var i = 0; i < runs; i++) {
+          yaon.parse(testYaml);
+        }
         final endTime = DateTime.now().millisecondsSinceEpoch;
         print('[yaml]: ${endTime - startTime} ms');
       } catch (e) {
@@ -50,9 +58,26 @@ void main() {
       }
 
       try {
+        final testYaml = File('assets/test.yaml').readAsStringSync();
         final startTime = DateTime.now().millisecondsSinceEpoch;
+        for (var i = 0; i < runs; i++) {
+          yaon.parse(
+            testYaml,
+            normalize: true,
+          );
+        }
+        final endTime = DateTime.now().millisecondsSinceEpoch;
+        print('[normalized yaml]: ${endTime - startTime} ms');
+      } catch (e) {
+        print('[normalized yaml]: error!');
+      }
+
+      try {
         final testBson = File('assets/test.bson').readAsBytesSync();
-        BSON().deserialize(BsonBinary.from(testBson));
+        final startTime = DateTime.now().millisecondsSinceEpoch;
+        for (var i = 0; i < runs; i++) {
+          BSON().deserialize(BsonBinary.from(testBson));
+        }
         final endTime = DateTime.now().millisecondsSinceEpoch;
         print('[bson]: ${endTime - startTime} ms');
       } catch (e) {
