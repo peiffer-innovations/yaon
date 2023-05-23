@@ -1,3 +1,8 @@
+## [1.1.1+1] - May 23, 2023
+
+* Automated dependency updates
+
+
 ## [1.1.1] - May 9th, 2023
 
 * Added `normalize` to normalize the parsing between JSON and YAML.
@@ -97,6 +102,7 @@
 ## [1.0.0+1] - April 3rd, 2022
 
 * Initial release
+
 
 
 
