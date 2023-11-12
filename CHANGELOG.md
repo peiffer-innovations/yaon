@@ -1,3 +1,8 @@
+## [1.1.3] - November 12th, 2023
+
+* Dependency updates
+
+
 ## [1.1.2+6] - October 31, 2023
 
 * Automated dependency updates

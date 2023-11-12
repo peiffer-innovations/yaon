@@ -76,7 +76,7 @@ void main() {
         final testBson = File('assets/test.bson').readAsBytesSync();
         final startTime = DateTime.now().millisecondsSinceEpoch;
         for (var i = 0; i < runs; i++) {
-          BSON().deserialize(BsonBinary.from(testBson));
+          BsonCodec.deserialize(BsonBinary.from(testBson));
         }
         final endTime = DateTime.now().millisecondsSinceEpoch;
         print('[bson]: ${endTime - startTime} ms');
@@ -104,7 +104,7 @@ void _create(String file) {
 
   final bsonLen = File('assets/test.bson')
     ..createSync(recursive: true)
-    ..writeAsBytesSync(BSON().serialize(data).byteList);
+    ..writeAsBytesSync(BsonCodec.serialize(data).byteList);
 
   print('[generated]: [json]: ${jsonLen.lengthSync()}');
   print('[generated]: [yaml]: ${yamlLen.lengthSync()}');
