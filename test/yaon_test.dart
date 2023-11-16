@@ -24,7 +24,7 @@ Third Line'''
   };
 
   test('json', () {
-    final input = '''
+    const input = '''
 {
   "foo": "bar",
   "list": [
@@ -49,7 +49,7 @@ Third Line'''
   });
 
   test('yaml', () {
-    final input = '''
+    const input = '''
 foo: bar
 list:
   - 1
@@ -99,7 +99,7 @@ Third Line'''
   });
 
   test('string', () {
-    final input = '''
+    const input = '''
 abc
 def
 ghi

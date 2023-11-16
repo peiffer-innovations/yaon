@@ -1,3 +1,8 @@
+## [1.1.4] - November 15th, 2023
+
+* Updated to standard analysis rules
+
+
 ## [1.1.3] - November 12th, 2023
 
 * Dependency updates
