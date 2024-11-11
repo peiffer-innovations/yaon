@@ -3,16 +3,16 @@ description: 'A simple library to parse either a string from either yaml or json
 homepage: 'https://github.com/peiffer-innovations/yaon'
 version: '1.1.4+10'
 
-environment: 
+environment:
   sdk: '>=3.0.0 <4.0.0'
 
-dependencies: 
+dependencies:
   logging: '^1.2.0'
   yaml: '^3.1.2'
 
-dev_dependencies: 
+dev_dependencies:
   bson: '^5.0.4'
-  flutter_lints: '^4.0.0'
+  flutter_lints: '^5.0.0'
   test: '^1.25.5'
   yaml_writer: '^2.0.0'
 
@@ -29,8 +29,8 @@ permittedLicenses:
 # detect the built in Flutter packages because they aren't published to pub.dev
 # and do not have a LICENSE file in their respective folders.  So this section
 # informs the license_checker that all the built in Flutter packages all have
-# the same BSD-3-Clause license as Flutter itself. 
-packageLicenseOverride: 
+# the same BSD-3-Clause license as Flutter itself.
+packageLicenseOverride:
   flutter: BSD-3-Clause
   flutter_driver: BSD-3-Clause
   flutter_goldens: BSD-3-Clause
@@ -42,7 +42,6 @@ packageLicenseOverride:
   rxdart: Apache-2.0
 
 ignore_updates:
- 
   - 'archive'
   - 'async'
   - 'boolean_selector'
